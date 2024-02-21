@@ -1,0 +1,114 @@
+@import '../../styles/variables';
+
+.lp-badge {
+  @include textTitleUppercase();
+
+  display: inline-block;
+  min-width: 16px;
+  padding: 0 $spacing-small;
+  color: $color-white;
+  border-radius: $radius-regular;
+  min-height: 16px;
+  text-align: center;
+
+  &.lp-letter-spacing {
+    letter-spacing: 0.5px;
+  }
+
+  &.primary {
+    background-color: $color-primary;
+  }
+
+  &.primary-light {
+    color: $color-primary;
+    background-color: rgba($color-primary, 0.1);
+  }
+
+  &.grey {
+    background-color: $color-dark30;
+    color: $color-white;
+  }
+
+  &.grey-light {
+    background-color: $color-light10;
+    color: $color-dark30;
+  }
+
+  &.grey-dark {
+    color: $color-dark70;
+    background-color: $color-light10;
+  }
+
+  &.green {
+    background-color: $color-green;
+  }
+
+  &.green-light {
+    color: $color-green;
+    background-color: rgba($color-green, 0.1);
+  }
+
+  &.black {
+    background-color: $color-dark90;
+  }
+
+  &.black-light {
+    color: $color-dark90;
+    background-color: rgba($color-dark90, 0.1);
+  }
+
+  &.red {
+    background-color: $color-red;
+  }
+
+  &.red-light {
+    color: $color-red;
+    background-color: rgba($color-red, 0.1);
+  }
+
+  &.pink {
+    background-color: $color-pink;
+  }
+
+  &.pink-light {
+    color: $color-pink;
+    background-color: rgba($color-pink, 0.1);
+  }
+
+  &.plum {
+    background-color: $color-violet;
+  }
+
+  &.plum-light {
+    color: $color-violet;
+    background-color: rgba($color-violet, 0.1);
+  }
+
+  &.orange {
+    background-color: $color-orange;
+  }
+
+  &.orange-light {
+    color: $color-orange;
+    background-color: rgba($color-orange, 0.1);
+  }
+
+  &.cyan {
+    background-color: $color-cyan;
+    color: $color-white;
+  }
+
+  &.cyan-light {
+    color: $color-cyan;
+    background-color: $color-cyan-secondary;
+  }
+
+  &.yellow {
+    background-color: $color-yellow;
+  }
+
+  &.yellow-light {
+    color: $color-yellow;
+    background-color: rgba($color-yellow, 0.1);
+  }
+}
