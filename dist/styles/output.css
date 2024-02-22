@@ -1,0 +1,93 @@
+.lp-badge {
+  font-size: 12px;
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 16px;
+  padding: 0 4px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  min-height: 16px;
+  text-align: center;
+}
+.lp-badge.lp-letter-spacing {
+  letter-spacing: 0.5px;
+}
+.lp-badge.primary {
+  background-color: #1076FB;
+}
+.lp-badge.primary-light {
+  color: #1076FB;
+  background-color: rgba(16, 118, 251, 0.1);
+}
+.lp-badge.grey {
+  background-color: #B2B7B9;
+  color: #FFFFFF;
+}
+.lp-badge.grey-light {
+  background-color: #E1E4E5;
+  color: #B2B7B9;
+}
+.lp-badge.grey-dark {
+  color: #4A4C4C;
+  background-color: #E1E4E5;
+}
+.lp-badge.green {
+  background-color: #1DB92C;
+}
+.lp-badge.green-light {
+  color: #1DB92C;
+  background-color: rgba(29, 185, 44, 0.1);
+}
+.lp-badge.black {
+  background-color: #191919;
+}
+.lp-badge.black-light {
+  color: #191919;
+  background-color: rgba(25, 25, 25, 0.1);
+}
+.lp-badge.red {
+  background-color: #FE2A4B;
+}
+.lp-badge.red-light {
+  color: #FE2A4B;
+  background-color: rgba(254, 42, 75, 0.1);
+}
+.lp-badge.pink {
+  background-color: #F874A4;
+}
+.lp-badge.pink-light {
+  color: #F874A4;
+  background-color: rgba(248, 116, 164, 0.1);
+}
+.lp-badge.plum {
+  background-color: #814CB5;
+}
+.lp-badge.plum-light {
+  color: #814CB5;
+  background-color: rgba(129, 76, 181, 0.1);
+}
+.lp-badge.orange {
+  background-color: #FF801D;
+}
+.lp-badge.orange-light {
+  color: #FF801D;
+  background-color: rgba(255, 128, 29, 0.1);
+}
+.lp-badge.cyan {
+  background-color: #33B5E0;
+  color: #FFFFFF;
+}
+.lp-badge.cyan-light {
+  color: #33B5E0;
+  background-color: #EBF8FC;
+}
+.lp-badge.yellow {
+  background-color: #FFC100;
+}
+.lp-badge.yellow-light {
+  color: #FFC100;
+  background-color: rgba(255, 193, 0, 0.1);
+}

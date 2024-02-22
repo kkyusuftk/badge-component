@@ -9,8 +9,7 @@ export default {
   input: "src/index.ts",
   output: {
     dir: "dist",
-    format: "cjs",
-    assetFileNames: 'assets/[name][extname]'
+    format: "es",
   },
   external: ['vue', 'vue-property-decorator'],
   plugins: [

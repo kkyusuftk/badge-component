@@ -1,16 +1,13 @@
 {
   "presets": [
-    ["@babel/env", { "modules": false }]
+    ["@babel/env", { "modules": false }],
+    ["@vue/babel-preset-jsx", { "compositionAPI": true }]
   ],
   "plugins" : [
-    "transform-vue-jsx",
     ["@babel/proposal-decorators", { "legacy": true }],
     ["@babel/proposal-class-properties", { "loose": true }],
     ["@babel/plugin-transform-private-methods", { "loose": true }],
     ["@babel/plugin-transform-private-property-in-object", { "loose": true }],
-    // JSX syntax translation to pure JS
-    // vue's 'v-model' syntax sugar understanding.
-    "jsx-v-model",
     "@babel/transform-runtime"
   ]
 }
