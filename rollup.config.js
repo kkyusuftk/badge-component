@@ -14,13 +14,7 @@ export default {
   external: ['vue', 'vue-property-decorator'],
   plugins: [
     typescript({
-      compilerOptions: {
-        target: "es5",
-        module: "es2015",
-        moduleResolution: "node",
-        experimentalDecorators: true,
-        jsx: "preserve"
-      }
+      tsconfig: './tsconfig.json'
     }),
     babel({ babelHelpers: 'runtime', extensions: ['.ts', '.tsx'] }),
     // outputting the css file in the dist directory
