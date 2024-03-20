@@ -1,7 +1,6 @@
 import Vue, { VNode } from 'vue'
 import "reflect-metadata";
 import { Component, Prop } from 'vue-property-decorator'
-import react from 'react';
 
 import './Badge.scss'
 
@@ -20,7 +19,6 @@ class Badge extends Vue {
   readonly letterSpacing: boolean
 
   render (): VNode {
-    console.log(react)
     return (
       <span class={`lp-badge ${this.color} ${this.letterSpacing ? 'lp-letter-spacing' : ''}`}>
         {this.$slots.default ?? this.text}
