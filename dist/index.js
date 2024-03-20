@@ -1,5 +1,7 @@
 import Vue, { h } from 'vue';
+import 'reflect-metadata';
 import { Prop, Component } from 'vue-property-decorator';
+import react from 'react';
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -39,6 +41,10 @@ function __decorate(decorators, target, key, desc) {
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 }
 
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
 typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
     var e = new Error(message);
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
@@ -51,25 +57,26 @@ var Badge = /** @class */function (_super) {
   }
   Badge.prototype.render = function () {
     var _a;
+    console.log(react);
     return h("span", {
       "class": "lp-badge ".concat(this.color, " ").concat(this.letterSpacing ? 'lp-letter-spacing' : '')
     }, [(_a = this.$slots["default"]) !== null && _a !== void 0 ? _a : this.text]);
   };
   __decorate([Prop({
     type: [String, Number],
-    required: false
-  })], Badge.prototype, "text", void 0);
+    required: true
+  }), __metadata("design:type", Object)], Badge.prototype, "text", void 0);
   __decorate([Prop({
-    type: String,
+    type: Boolean,
     required: false,
     "default": function _default() {
       return Badge.Color.PRIMARY;
     }
-  })], Badge.prototype, "color", void 0);
+  }), __metadata("design:type", String)], Badge.prototype, "color", void 0);
   __decorate([Prop({
     type: Boolean,
     required: false
-  })], Badge.prototype, "letterSpacing", void 0);
+  }), __metadata("design:type", Boolean)], Badge.prototype, "letterSpacing", void 0);
   Badge = __decorate([Component({
     name: 'Badge'
   })], Badge);

@@ -1,20 +1,26 @@
 import Vue, { VNode } from 'vue'
+import "reflect-metadata";
 import { Component, Prop } from 'vue-property-decorator'
+import react from 'react';
 
 import './Badge.scss'
 
-@Component({ name: 'Badge' })
+@Component({ 
+  name: 'Badge',
+})
+
 class Badge extends Vue {
-  @Prop({ type: [String, Number], required: false })
+  @Prop({ type: [String, Number], required: true })
   readonly text: string | number
 
-  @Prop({ type: String, required: false, default: () => Badge.Color.PRIMARY })
+  @Prop({ type: Boolean, required: false, default: () => Badge.Color.PRIMARY })
   readonly color: Badge.Color
 
   @Prop({ type: Boolean, required: false })
   readonly letterSpacing: boolean
 
   render (): VNode {
+    console.log(react)
     return (
       <span class={`lp-badge ${this.color} ${this.letterSpacing ? 'lp-letter-spacing' : ''}`}>
         {this.$slots.default ?? this.text}

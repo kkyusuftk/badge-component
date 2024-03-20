@@ -1,4 +1,5 @@
 import Vue, { VNode } from 'vue';
+import "reflect-metadata";
 import './Badge.scss';
 declare class Badge extends Vue {
     readonly text: string | number;
