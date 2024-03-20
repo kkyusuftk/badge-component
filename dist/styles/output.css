@@ -92,6 +92,14 @@
   background-color: rgba(255, 193, 0, 0.1);
 }
 
+.lp-color-preview {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==");
+  background-repeat: repeat;
+  border-radius: 4px;
+  height: 32px;
+  width: 32px;
+}
+
 .lp-hint-activator {
   display: inline-block;
   overflow: visible;

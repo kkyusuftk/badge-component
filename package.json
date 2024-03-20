@@ -1,9 +1,10 @@
 {
   "name": "vnext-demo",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "",
   "type": "module",
   "main": "dist/index.js",
+  "sideEffects": false,
   "scripts": {
     "build": "rm -rf dist && rollup --config rollup.config.js"
   },

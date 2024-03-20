@@ -5,8 +5,12 @@ import copy from 'rollup-plugin-copy'
 import fs from 'fs';
 import path from 'path';
 
+/** @type {import('rollup').RollupOptions} */
 export default {
   input: "src/index.ts",
+  treeshake: {
+    annotations: true
+  },
   output: {
     dir: "dist",
     format: "es",

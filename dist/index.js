@@ -51,6 +51,7 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
 
 var Badge = /** @class */function (_super) {
   __extends(Badge, _super);
+  
   function Badge() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -77,7 +78,8 @@ var Badge = /** @class */function (_super) {
   }), __metadata("design:type", Boolean)], Badge.prototype, "letterSpacing", void 0);
   Badge = __decorate([Component({
     name: 'Badge'
-  })], Badge);
+  })
+  ], Badge);
   return Badge;
 }(Vue);
 (function (Badge) {
@@ -109,6 +111,7 @@ var Badge = /** @class */function (_super) {
 // TODO(ignat): Refactor and split into 2 components - Hint and Notification.
 var Hint = /** @class */function (_super) {
   __extends(Hint, _super);
+  
   function Hint() {
     var _this = _super !== null && _super.apply(this, arguments) || this;
     _this.hasActivator = false;
@@ -236,7 +239,8 @@ var Hint = /** @class */function (_super) {
   }), __metadata("design:type", Number)], Hint.prototype, "timeout", void 0);
   Hint = Hint_1 = __decorate([Component({
     name: 'Hint'
-  })], Hint);
+  })
+  ], Hint);
   return Hint;
 }(Vue);
 (function (Hint) {
@@ -254,4 +258,41 @@ var Hint = /** @class */function (_super) {
   })(Hint.Position || (Hint.Position = {}));
 })(Hint || (Hint = {}));
 
-export { Badge, Hint };
+var ColorPreview = /** @class */function (_super) {
+  __extends(ColorPreview, _super);
+  
+  function ColorPreview() {
+    return _super !== null && _super.apply(this, arguments) || this;
+  }
+  ColorPreview.prototype.render = function () {
+    return h("div", {
+      "class": "lp-color-preview",
+      "style": {
+        boxShadow: "inset 0 0 0 1000px ".concat(this.color),
+        height: "".concat(this.height, "px"),
+        width: "".concat(this.width, "px")
+      }
+    });
+  };
+  __decorate([Prop({
+    type: String,
+    required: true
+  }), __metadata("design:type", String)], ColorPreview.prototype, "color", void 0);
+  __decorate([Prop({
+    type: Number,
+    required: false,
+    "default": 32
+  }), __metadata("design:type", Number)], ColorPreview.prototype, "height", void 0);
+  __decorate([Prop({
+    type: Number,
+    required: false,
+    "default": 32
+  }), __metadata("design:type", Number)], ColorPreview.prototype, "width", void 0);
+  ColorPreview = __decorate([Component({
+    name: 'ColorPreview'
+  })
+  ], ColorPreview);
+  return ColorPreview;
+}(Vue);
+
+export { Badge, ColorPreview, Hint };
