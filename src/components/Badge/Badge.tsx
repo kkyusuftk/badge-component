@@ -7,7 +7,6 @@ import './Badge.scss'
 @Component({ 
   name: 'Badge',
 })
-
 class Badge extends Vue {
   @Prop({ type: [String, Number], required: true })
   readonly text: string | number

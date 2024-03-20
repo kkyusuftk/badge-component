@@ -14,6 +14,7 @@ export default {
   output: {
     dir: "dist",
     format: "es",
+    preserveModules: true
   },
   external: ['vue', 'vue-property-decorator'],
   plugins: [

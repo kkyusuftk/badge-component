@@ -1,15 +1,15 @@
 {
   "name": "vnext-demo",
-  "version": "1.4.2",
+  "version": "1.4.4",
   "description": "",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "sideEffects": false,
   "scripts": {
     "build": "rm -rf dist && rollup --config rollup.config.js"
   },
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./dist/src/index.js",
     "./styles": "./dist/styles/output.css"
   },
   "repository": {
